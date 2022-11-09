@@ -3,6 +3,7 @@ package proxy
 import (
 	"fmt"
 	"sort"
+	"strings"
 	"sync"
 )
 
@@ -71,10 +72,11 @@ func (ps ProxyList) NameAddCounrty() ProxyList {
 		go func() {
 			defer wg.Done()
 			_, country, err := geoIp.Find(ps[ii].BaseInfo().Server)
-			if err != nil || country == "" {
-				country = "ZZ"
+			if err != nil {
+				country = "🏁 ZZ"
 			}
 			ps[ii].SetName(fmt.Sprintf("%s", country))
+			ps[ii].SetCountry(country)
 			//ps[ii].SetIP(ip)
 		}()
 	}
@@ -85,7 +87,7 @@ func (ps ProxyList) NameAddCounrty() ProxyList {
 func (ps ProxyList) NameAddIndex() ProxyList {
 	num := len(ps)
 	for i := 0; i < num; i++ {
-		ps[i].SetName(fmt.Sprintf("%s_%d", ps[i].BaseInfo().Name, i+1))
+		ps[i].SetName(fmt.Sprintf("%s_%+02v", ps[i].BaseInfo().Name, i+1))
 	}
 	return ps
 }
@@ -94,8 +96,8 @@ func (ps ProxyList) NameReIndex() ProxyList {
 	num := len(ps)
 	for i := 0; i < num; i++ {
 		originName := ps[i].BaseInfo().Name
-		country := string([]rune(originName)[:2])
-		ps[i].SetName(fmt.Sprintf("%s_%d", country, i+1))
+		country := strings.SplitN(originName, "_", 2)[0]
+		ps[i].SetName(fmt.Sprintf("%s_%+02v", country, i+1))
 	}
 	return ps
 }

@@ -1,10 +1,16 @@
 # your domain
 domain: free886.herokuapp.com
 
+# database url
+database_url: ""
+
 # cloudflare api
 cf_email: ""
 cf_key: ""
 
 # source definition file
 source-files:
-  - https://raw.githubusercontent.com/vipxkw/proxypool/master/config/source.yaml
+  # use local file
+  - source.yaml
+  # use web file
+  - https://raw.githubusercontent.com/vipxkw/proxypool-1/master/config/source.yaml
