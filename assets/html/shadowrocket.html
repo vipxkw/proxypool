@@ -42,22 +42,8 @@
     
     <div class="container">
         <div class="section pb-0">
-            <h1 class="title is-2"><i class="metron-surge"></i>&nbspSurge</h1>
+            <h1 class="title is-2"><i class="metron-shadowrocket"></i>&nbspShadowRocket</h1>
         </div>
-        <section class='section'>
-            <h5 class="title is-4 mt-3">配置文件</h5>
-            <div class="table-container mt-2">
-                <table class="table is-fullwidth">
-                    <tbody>
-                        <tr>
-                            <th>Surge配置文件</th>
-                            <td>https://{{ .domain }}/surge/config</td>
-                            <td class="has-text-right"><a href="surge3:///install-config?url=https://{{ .domain }}/surge/config" class="button is-small is-link">一键导入</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
         <section class="section">
             <h5 class="title is-4">节点列表</h5>
             <div class="table-container">
@@ -65,17 +51,27 @@
                     <table class="table is-fullwidth">
                         <tbody>
                             <tr>
-                                <th>Surge节点</th>
-                                <td>https://{{ .domain }}/surge/proxies</td>
+                                <th>全部节点订阅</th>
+                                <td>https://{{ .domain }}/clash/proxies</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                            <tr><th>常用国家订阅</th>
+                                <td>https://{{ .domain }}/clash/proxies?c=CN,HK,TW,JP,US</td>
                                 <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+            <article class="message is-info">
+                <div class="message-body">
+                    ShadowRocket的订阅包含了Clash格式，可以参考<a href="./clash">Clash</a>进行筛选。
+                </div>
+            </article>
         </section>
     </div>
     <footer class="footer has-text-centered">
+
     </footer>
     <script src="static/js/index.js"></script>
     

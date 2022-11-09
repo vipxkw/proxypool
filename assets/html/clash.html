@@ -1,129 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
-    <title>免费Clash节点</title>
-    <style type='text/css'>
-        body {
-            background-color: white;
-            color: #333333;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 36px;
-            line-height: 1;
-            font-size: 14px;
-        }
-
-        .section {
-            margin-bottom: 36px;
-        }
-
-        .section.friendly {
-            color: #222222;
-        }
-
-        .section.friendly h1 {
-            font-size: 26px;
-            background-color: #dad8e4;
-            padding: 18px 22px 15px 22px;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        .section.friendly h1 strong {
-            display: inline-block;
-            float: left;
-        }
-
-        .section.friendly h1 small {
-            display: inline-block;
-            float: right;
-            text-align: right;
-            font-size: 18px;
-            padding-top: 4px;
-            color: #333333;
-        }
-
-        .section.friendly .article {
-            border: 4px solid #dad8e4;
-            padding: 24px 18px 18px 18px;
-        }
-
-        .section.friendly .article h3 {
-            font-size: 20px;
-            margin: 0 0 18px 0;
-        }
-
-        .section.friendly .article a {
-            color: #6b6ceb;
-        }
-
-        .section.friendly .article a:visited {
-            color: #1d1d3b;
-        }
-
-        .section.friendly .article p {
-            font-size: 14px;
-        }
-
-        .section.friendly .article ul {
-            list-style-type: square;
-        }
-
-        .section.original {
-            background-color: #eeeeee;
-            color: #444444;
-        }
-
-        .section.original h2 {
-            background-color: #dddddd;
-            margin: 0;
-            padding: 18px 22px 18px 22px;
-            font-size: 20px;
-        }
-
-        .section.original pre {
-            margin: 0;
-            padding: 18px 22px 18px 22px;
-            overflow: auto;
-            font-family: monaco, monospaced;
-        }
-
-        .section.original pre code {
-            display: block;
-            font-size: 11px;
-            width: 100%;
-        }
-    </style>
+    <title>Free Proxies</title>
+    <meta property="og:description" content="免费的ss、ssr、vmess、trojan节点">
+    <meta name="keywords" content="免费的ss、ssr、vmess、torjan节点">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    
+    <link rel="stylesheet" type="text/css" href="static/css/metron-icon.css" />
+    
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <script src="static/js/jquery.js"></script>
 </head>
+
 <body>
-<div class='container'>
-    <div class='section friendly'>
-        <h1><strong>免费Clash节点</strong></h1>
-        <div class='article'>
-            <p>自动抓取tg频道、订阅地址、公开互联网上的ss、ssr、vmess、trojan节点信息，聚合去重后提供clash配置，每15分钟更新</p>
-            <br>
-            <p>Clash配置文件：https://{{ .domain }}/clash/config <a href="clash://install-config?url=https://{{ .domain }}/clash/config">一键导入</a></p>
-            <p>Clash proxy-provider(Shadowrocket添加订阅方式可用)：<a href="https://{{ .domain }}/clash/proxies">https://{{ .domain }}/clash/proxies</a></p>
-            <br>
-			<p>筛选代理类型(此种方式你只能自己维护配置文件)：https://{{ .domain }}/clash/proxies?type=ss,ssr,vmess</p>
-			<p>筛选国家(此种方式你只能自己维护配置文件)：https://{{ .domain }}/clash/proxies?type=ss,ssr,vmess&c=HK,TW,US</p>
-            <p>所有节点的Provider(不是都可以用)：<a href="https://{{ .domain }}/clash/proxies?type=all">https://{{ .domain }}/clash/proxies?type=all</a></p>
-            <br>
-            <p>抓取程序已开源：<a href="https://github.com/vipxkw/proxypool">https://github.com/vipxkw/proxypool</a></p>
+    
+    <nav class="navbar is-primary pl-2 pr-2" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="https://{{ .domain }}" class="navbar-item">
+                <h1 class="title is-4">Free Proxies</h1>
+            </a>
+            <a role="button" class="navbar-burger burger is-white" aria-label="menu" aria-expanded="false" data-target="clients">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
+        <div id="clients" class="navbar-menu">
+            <div class="navbar-start is-size-6">
+                <a href="./clash" class="navbar-item"><span class="icon"><i class="metron-clash"></i></span>&nbspClash</a>
+                <a href="./shadowrocket" class="navbar-item"><span class="icon"><i class="metron-shadowrocket"></i></span>&nbspShadowRocket</a>
+                <a href="./surge" class="navbar-item"><span class="icon"><i class="metron-surge"></i></span>&nbspSurge</a>
+                <a href="https://bianyuan.xyz/" class="navbar-item">&nbsp?&nbsp&nbspMore</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="section pb-0">
+            <h1 class="title is-2"><i class="metron-clash"></i>&nbspClash</h1>
+        </div>
+        <section class='section'>
+            <h5 class="title is-4 mt-3">配置文件</h5>
+            <div class="table-container mt-2">
+                <table class="table is-fullwidth">
+                    <tbody>
+                        <tr>
+                            <th>远程配置文件</th>
+                            <td>https://{{ .domain }}/clash/config</td>
+                            <td class="has-text-right"><a href="clash://install-config?url=https://{{ .domain }}/clash/config" class="button is-small is-link">一键导入</a></td>
+                        </tr>
+                        <tr>
+                            <th>本地部署时配置文件</th>
+                            <td>http://127.0.0.1:12580/clash/config</td>
+                            <td class="has-text-right"><a href="clash://install-config?url=http://127.0.0.1:12580/clash/localconfig" class="button is-small is-link">一键导入</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <article class="message is-info">
+                <div class="message-body">
+                    以上提供的配置文件本身不包含节点，而使用clash provider的方式加载远程节点。
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <h5 class="title is-4">Provider</h5>
+            <div class="table-container">
+                <div class="table-container">
+                    <table class="table is-fullwidth">
+                        <tbody>
+                            <tr>
+                                <th>所有节点</th>
+                                <td>https://{{ .domain }}/clash/proxies</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                            <tr>
+                                <th>筛选节点示例</th>
+                                <td>https://{{ .domain }}/clash/proxies?c=CN,HK,TW&speed=15,30&type=ss</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <article class="message is-danger">
+                    <div class="message-body">
+                        ❗️节点过多会造成软件卡顿，可以自行对provider进行筛选后更改配置文件。
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section ">
+            <h5 class="title is-5">Provider筛选参数</h5>
+            <p>🌟 使用<a href="https://en.wikipedia.org/wiki/Query_string">URL Query</a>对Clash Provider进行筛选</p>
+            <div class="table-container mt-2">
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <td>Query&nbspKey</td>
+                            <td>Query&nbspValue</td>
+                            <td>备注</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>类型</th>
+                            <td>type</td>
+                            <td>ss,ssr,vmess,trojan</td>
+                            <td>可同时选择多个类型</td>
+                        </tr>
+                        <tr>
+                            <th>国家</th>
+                            <td>c</td>
+                            <td>AT,CN,IN,HK,JP,NL,RU,SG,TW,US...</td>
+                            <td>可同时选择多个国家</td>
+                        </tr>
+                        <tr>
+                            <th>排除国家</th>
+                            <td>nc</td>
+                            <td>AT,CN,IN,HK,JP,NL,RU,SG,TW,US...</td>
+                            <td>可同时选择多个国家</td>
+                        </tr>
+                        <tr>
+                            <th>速度</th>
+                            <td>speed</td>
+                            <td>任何数字</td>
+                            <td>单个数字选择最低速度<br>两个数字选择速度区间</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </div>
-</div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DC6CR61FHE"></script>
-<script>
+    <footer class="footer has-text-centered">
+    </footer>
+    <script src="static/js/index.js"></script>
+    
+    <script async src="static/js/3c8f9eba5e504d9cb76aa59ec97f0571.js"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-DC6CR61FHE');
-</script>
+    gtag('config', 'G-9VK0B43EQ3');
+    </script>
 </body>
+
 </html>

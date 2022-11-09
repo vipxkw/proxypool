@@ -3,7 +3,7 @@ package provider
 import (
 	"strings"
 
-	"github.com/vipxkw/proxypool/pkg/proxy"
+	"github.com/zu1k/proxypool/pkg/proxy"
 )
 
 type Clash struct {
