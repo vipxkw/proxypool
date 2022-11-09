@@ -1,0 +1,5 @@
+domain: iussr.herokuapp.com
+cf_email: ""
+cf_key: ""
+source-files:
+  - https://raw.githubusercontent.com/vipxkw/proxypool/master/config/source.yaml
