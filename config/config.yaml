@@ -1,9 +1,6 @@
 # your domain
 domain: free886.herokuapp.com
 
-# database url
-database_url: ""
-
 # cloudflare api
 cf_email: ""
 cf_key: ""
