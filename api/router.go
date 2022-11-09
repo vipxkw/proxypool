@@ -4,12 +4,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/vipxkw/proxypool/config"
+	"github.com/zu1k/proxypool/config"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/heroku/x/hmetrics/onload"
-	"github.com/vipxkw/proxypool/internal/cache"
-	"github.com/vipxkw/proxypool/pkg/provider"
+	"github.com/zu1k/proxypool/internal/cache"
+	"github.com/zu1k/proxypool/pkg/provider"
 )
 
 const version = "v0.3.1"

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/vipxkw/proxypool/api"
-	"github.com/vipxkw/proxypool/internal/app"
-	"github.com/vipxkw/proxypool/internal/cron"
-	"github.com/vipxkw/proxypool/pkg/proxy"
+	"github.com/zu1k/proxypool/api"
+	"github.com/zu1k/proxypool/internal/app"
+	"github.com/zu1k/proxypool/internal/cron"
+	"github.com/zu1k/proxypool/pkg/proxy"
 )
 
 var configFilePath = ""

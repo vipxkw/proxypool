@@ -17,5 +17,5 @@ jobs:
           username: zu1k
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: vipxkw/proxypool/proxypool
+          repository: zu1k/proxypool/proxypool
           tag_with_ref: true

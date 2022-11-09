@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/vipxkw/proxypool/pkg/proxy"
-	"github.com/vipxkw/proxypool/pkg/tool"
+	"github.com/zu1k/proxypool/pkg/proxy"
+	"github.com/zu1k/proxypool/pkg/tool"
 )
 
 type Getter interface {

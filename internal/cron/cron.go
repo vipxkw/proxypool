@@ -2,7 +2,7 @@ package cron
 
 import (
 	"github.com/jasonlvhit/gocron"
-	"github.com/vipxkw/proxypool/internal/app"
+	"github.com/zu1k/proxypool/internal/app"
 )
 
 func Cron() {

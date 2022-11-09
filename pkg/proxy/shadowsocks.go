@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vipxkw/proxypool/pkg/tool"
+	"github.com/zu1k/proxypool/pkg/tool"
 )
 
 var (
