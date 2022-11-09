@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zu1k/proxypool/internal/cache"
-	"github.com/zu1k/proxypool/pkg/provider"
-	"github.com/zu1k/proxypool/pkg/proxy"
+	"github.com/vipxkw/proxypool/internal/cache"
+	"github.com/vipxkw/proxypool/pkg/provider"
+	"github.com/vipxkw/proxypool/pkg/proxy"
 )
 
 var location, _ = time.LoadLocation("PRC")
