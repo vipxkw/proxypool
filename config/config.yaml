@@ -7,4 +7,4 @@ cf_key: ""
 
 # source definition file
 source-files:
-  - https://raw.githubusercontent.com/vipxkw/proxypool/main/config/source.yaml
+  - https://raw.githubusercontent.com/vipxkw/proxypool/master/config/source.yaml
