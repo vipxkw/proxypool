@@ -10,4 +10,4 @@ cf_key: ""
 
 # source definition file
 source-files:
-  - https://raw.githubusercontent.com/vipxkw/proxypool-1/master/config/source.yaml
+  - https://raw.githubusercontent.com/vipxkw/proxypool/master/config/source.yaml
